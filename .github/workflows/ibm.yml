@@ -43,7 +43,7 @@ jobs:
     - name: Login IBM Cloud1
       env:
         IBM_ACCOUNT: ${{ secrets.IBM_ACCOUNT1 }}
-        REGION_NUM: ${{ secrets.REGION_NUM1 }}
+        REGION_NUM: ${{ secrets.REGION_NUM }}
       run: |
         ./IBM_Cloud_CLI/ibmcloud login <<EOF
         $IBM_ACCOUNT
@@ -66,7 +66,7 @@ jobs:
     - name: Login IBM Cloud2
       env:
         IBM_ACCOUNT: ${{ secrets.IBM_ACCOUNT2 }}
-        REGION_NUM: ${{ secrets.REGION_NUM2 }}
+        REGION_NUM: ${{ secrets.REGION_NUM }}
       run: |
         ./IBM_Cloud_CLI/ibmcloud login <<EOF
         $IBM_ACCOUNT
@@ -80,7 +80,7 @@ jobs:
         ./IBM_Cloud_CLI/ibmcloud target -g "$RESOURSE_ID"
         ./IBM_Cloud_CLI/ibmcloud target --cf
         ./IBM_Cloud_CLI/ibmcloud cf install -f -v 6.15.0
-    - name: Restart IBM Cloud22_1
+    - name: Restart IBM Cloud2_1
       env:
         IBM_APP_NAME: ${{ secrets.IBM_APP_NAME2 }}
       run: |
@@ -88,8 +88,8 @@ jobs:
         
     - name: Login IBM Cloud2_1
       env:
-        IBM_ACCOUNT: ${{ secrets.IBM_ACCOUNT2_1 }}
-        REGION_NUM: ${{ secrets.REGION_NUM2_1 }}
+        IBM_ACCOUNT: ${{ secrets.IBM_ACCOUNT2 }}
+        REGION_NUM: ${{ secrets.REGION_NUM }}
       run: |
         ./IBM_Cloud_CLI/ibmcloud login <<EOF
         $IBM_ACCOUNT
