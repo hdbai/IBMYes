@@ -27,7 +27,7 @@ jobs:
         $REGION_NUM
         no
         EOF
-    - name: Target IBM Cloud-xocava
+    - name: Target IBM Cloud
       env:
         RESOURSE_ID: ${{ secrets.RESOURSE_ID }}
       run: |
@@ -50,7 +50,7 @@ jobs:
         $REGION_NUM
         no
         EOF
-    - name: Target IBM Cloud-xocava
+    - name: Target IBM Cloud1
       env:
         RESOURSE_ID: ${{ secrets.RESOURSE_ID1 }}
       run: |
@@ -73,7 +73,7 @@ jobs:
         $REGION_NUM
         no
         EOF
-    - name: Target IBM Cloud-xocava
+    - name: Target IBM Cloud2
       env:
         RESOURSE_ID: ${{ secrets.RESOURSE_ID2 }}
       run: |
@@ -96,7 +96,7 @@ jobs:
         $REGION_NUM
         no
         EOF
-    - name: Target IBM Cloud-xocava
+    - name: Target IBM Cloud2_1
       env:
         RESOURSE_ID: ${{ secrets.RESOURSE_ID2_1 }}
       run: |
