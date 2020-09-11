@@ -57,7 +57,7 @@ jobs:
         ./IBM_Cloud_CLI/ibmcloud target -g "$RESOURSE_ID"
         ./IBM_Cloud_CLI/ibmcloud target --cf
         ./IBM_Cloud_CLI/ibmcloud cf install -f -v 6.15.0
-    - name: Restart IBM Cloud
+    - name: Restart IBM Cloud1
       env:
         IBM_APP_NAME: ${{ secrets.IBM_APP_NAME1 }}
       run: |
@@ -80,7 +80,7 @@ jobs:
         ./IBM_Cloud_CLI/ibmcloud target -g "$RESOURSE_ID"
         ./IBM_Cloud_CLI/ibmcloud target --cf
         ./IBM_Cloud_CLI/ibmcloud cf install -f -v 6.15.0
-    - name: Restart IBM Cloud
+    - name: Restart IBM Cloud22_1
       env:
         IBM_APP_NAME: ${{ secrets.IBM_APP_NAME2 }}
       run: |
@@ -103,7 +103,7 @@ jobs:
         ./IBM_Cloud_CLI/ibmcloud target -g "$RESOURSE_ID"
         ./IBM_Cloud_CLI/ibmcloud target --cf
         ./IBM_Cloud_CLI/ibmcloud cf install -f -v 6.15.0
-    - name: Restart IBM Cloud
+    - name: Restart IBM Cloud2_1
       env:
         IBM_APP_NAME: ${{ secrets.IBM_APP_NAME2_1 }}
       run: |
